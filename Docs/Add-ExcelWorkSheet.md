@@ -14,7 +14,7 @@ schema: 2.0.0
 
 ```
 Add-ExcelWorkSheet [[-ExcelDocument] <ExcelPackage>] [[-WorksheetName] <String>] [[-Option] <String>]
- [[-Supress] <Boolean>] [<CommonParameters>]
+ [[-Suppress] <Boolean>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -62,13 +62,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Supress
-{{Fill Supress Description}}
+### -Suppress
+{{Fill Suppress Description}}
 
 ```yaml
 Type: Boolean
 Parameter Sets: (All)
-Aliases:
+Aliases: Supress
 
 Required: False
 Position: 3
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

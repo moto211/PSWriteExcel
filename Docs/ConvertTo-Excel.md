@@ -14,9 +14,9 @@ schema: 2.0.0
 
 ```
 ConvertTo-Excel [[-FilePath] <String>] [[-Excel] <ExcelPackage>] [[-ExcelWorkSheetName] <String>]
- [[-DataTable] <Object>] [[-Option] <String>] [-AutoFilter] [-AutoFit] [-FreezeTopRow] [-FreezeFirstColumn]
+ [[-DataTable] <Array>] [[-Option] <String>] [-AutoFilter] [-AutoFit] [-FreezeTopRow] [-FreezeFirstColumn]
  [-FreezeTopRowFirstColumn] [[-FreezePane] <Int32[]>] [-Transpose] [[-TransposeSort] <String>]
- [[-TableStyle] <TableStyles>] [[-TableName] <String>] [-OpenWorkBook] [<CommonParameters>]
+ [[-TableStyle] <TableStyles>] [[-TableName] <String>] [-OpenWorkBook] [-AllProperties] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,6 +32,21 @@ PS C:\> {{ Add example code here }}
 {{ Add example description here }}
 
 ## PARAMETERS
+
+### -AllProperties
+{{ Fill AllProperties Description }}
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: PreScanHeaders
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -AutoFilter
 {{Fill AutoFilter Description}}
@@ -67,7 +82,7 @@ Accept wildcard characters: False
 {{Fill DataTable Description}}
 
 ```yaml
-Type: Object
+Type: Array
 Parameter Sets: (All)
 Aliases: TargetData
 
@@ -277,7 +292,7 @@ Accept wildcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 

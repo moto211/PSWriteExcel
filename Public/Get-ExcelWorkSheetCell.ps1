@@ -4,10 +4,9 @@ function Get-ExcelWorkSheetCell {
         [OfficeOpenXml.ExcelWorksheet] $ExcelWorksheet,
         [int] $CellRow,
         [int] $CellColumn,
-        [bool] $Supress
+        [alias('Supress')][bool] $Suppress
     )
     if ($ExcelWorksheet) {
-        $Data = $ExcelWorksheet.Cells[$CellRow, $CellColumn].Value
+        $ExcelWorksheet.Cells[$CellRow, $CellColumn].Value
     }
-    return $Data
 }
